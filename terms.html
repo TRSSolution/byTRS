@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Terms and Conditions - Triumphant Robust Solutions</title>
+    <style>
+        /* Custom styles for better readability */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .terms-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .terms-container h1 {
+            font-size: 2.5rem;
+            color: #214c79;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .terms-container h2 {
+            font-size: 1.75rem;
+            color: #006766;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .terms-container p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .terms-container ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .terms-container ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .terms-container a {
+            color: #006766;
+            text-decoration: underline;
+        }
+
+        .terms-container a:hover {
+            color: #214c79;
+        }
+
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-left: 4px solid #006766;
+            margin: 20px 0;
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #006766;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-top:hover {
+            color: #214c79;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    < <header class="w-full bg-white fixed top-0 left-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="images/logo.png" alt="Company Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold text-[#214c79] hidden md:block">Triumphant Robust
+                            Solutions</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Home
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="products.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Products
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        About Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Contact Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="contact.html"
+                        class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white px-6 py-2 rounded-lg font-medium hover:from-[#006766] hover:to-[#214c79] transition-all transform hover:scale-105 shadow-md">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                    class="md:hidden p-2 rounded-md text-[#214c79] hover:text-[#006766] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#214c79]">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50">
+            <!-- Overlay -->
+            <div class="fixed inset-0 bg-black/50" aria-hidden="true"></div>
+
+            <!-- Menu Content -->
+            <div class="relative bg-white max-w-xs w-full h-full shadow-xl">
+                <div class="p-5">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="images/logo.png" alt="Company Logo" class="h-10 w-auto">
+                        <button id="close-menu-button"
+                            class="p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#214c79]">
+                            <svg class="h-6 w-6 text-[#214c79]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <nav class="flex flex-col space-y-4">
+                        <a href="index.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Home</a>
+                        <a href="products.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Products</a>
+                        <a href="about.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">About Us</a>
+                        <a href="contact.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Contact Us</a>
+                        <a href="contact.html"
+                            class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white px-6 py-2 rounded-lg text-center font-medium hover:from-[#006766] hover:to-[#214c79] transition-all transform hover:scale-105 shadow-md mt-4">
+                            Get Started
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </header>
+
+        <!-- Terms and Conditions Content -->
+        <main class="terms-container pt-32">
+            <h1>Terms and Conditions</h1>
+            <p>This agreement between you ("User") and Triumphant Robust Solutions Private Limited ("TRSPL") governs
+                your
+                use of the websites <a href="https://www.bytrs.com">www.bytrs.com</a> and <a
+                    href="www.teamseafarers.in">www.teamseafarers.in</a>, including their mobile
+                application (collectively, the "Site"). By accessing or using the Site, you agree to these legally
+                binding
+                Terms and Conditions. If you disagree, you must not use the Service. Your use is also subject to our
+                Privacy
+                Policy, which outlines how we collect, use, and protect your personal information. Please review the
+                Terms
+                and Privacy Policy carefully, as they form a binding contract between you and TRSPL.</p>
+
+            <div class="highlight">
+                <p><strong>Key Points:</strong> Please read these terms carefully. They cover important information
+                    about
+                    your rights and responsibilities when using our services.</p>
+            </div>
+
+            <h2>1. Intellectual Property Rights</h2>
+            <p>Unless otherwise stated, Triumphant Robust Solutions and/or its licensors own the intellectual property
+                rights for all material on this website. All intellectual property rights are reserved. You may access
+                this
+                for your personal use, subject to the restrictions set in these Terms and Conditions.</p>
+
+
+            <h2>2. Access</h2>
+            <p>Subject to these Terms of Use, TRSPL may offer Services for Your personal use, including hardware,
+                widgets,
+                and materials displayed on the Site. Services shall not be used for third-party benefits. TRSPL does not
+                guarantee the appropriateness of Content outside India, and users accessing from other regions do so at
+                their own risk. These Terms do not permit unauthorized promotional activities. You may access Platforms
+                for
+                personal use only and must not use another User's account without permission.</p>
+
+            <h2>3. Registration</h2>
+            <p>To avail services, You must register an account by providing accurate details, including name, phone
+                number,
+                and email. By registering, You consent to communications via phone, SMS, or email. You must maintain
+                up-to-date information; failure to do so may lead to account termination. Registration is a one-time
+                process, and You must log in using the same credentials. You are responsible for keeping Your account
+                secure
+                and must notify TRSPL of any unauthorized access. False or misleading registration details may result in
+                account suspension.</p>
+
+            <h2>4. Content on the Site</h2>
+            <p>"Content" includes text, images, videos, and interactive features provided by TRSPL or Users. User
+                Submissions are not TRSPL’s responsibility, and Users are liable for any damages caused by their
+                content.
+                TRSPL does not own User Submissions but may monitor or remove them if necessary. TRSPL is not liable for
+                inaccurate or outdated Content. Advertisements for online gambling or lotteries require legal
+                authorization.
+                User Submissions must not infringe third-party intellectual property rights, and necessary permissions
+                must
+                be obtained before uploading such content. Users must comply with all applicable laws.</p>
+
+
+
+            <h2>5. Content Backups</h2>
+            <p>Although regular backups of Content are performed, we do not guarantee that there will be no loss or
+                corruption of data. Corrupt or invalid backup points may be caused by, without limitation, Content that
+                is
+                corrupted prior to being backed up or that changes during the time a backup is performed. We will
+                provide
+                support and attempt to troubleshoot any known or discovered issues that may affect the backups of
+                Content.
+                However, You acknowledge that we have no liability related to the integrity of Content or the failure to
+                successfully restore Content to a usable state.</p>
+            <p>You agree to maintain a complete and accurate copy of any Content in a location independent of the
+                Service.
+            </p>
+
+            <h2>6. Services</h2>
+            <ul>
+                <li>The Company operates the online platform <strong>teamseafarers.in</strong> to increase visibility of
+                    Marine Institute courses nationwide, allowing seafarers to view and reserve courses seamlessly. The
+                    platform provides detailed course information, including descriptions, schedules, fees, and
+                    prerequisites.</li>
+                <li>TRSPL endeavors to ensure service availability without undue disruption, but is not responsible for
+                    harm
+                    resulting from content use, viewing, or downloading. Users must take necessary precautions against
+                    viruses and other harmful content.</li>
+                <li>TRSPL may send updates, promotional materials, and other service-related information. Users can
+                    unsubscribe from such notifications at any time.</li>
+                <li>User personal information is subject to our <a href="#">Privacy Policy</a>. TRSPL ensures
+                    confidentiality and may share information with authorized representatives on a need-to-know basis
+                    for
+                    service provision.</li>
+                <li>The Company does not guarantee platform stability and may change services without prior user
+                    consent.
+                    TRSPL does not warrant error-free or uninterrupted services.</li>
+                <li>TRSPL does not control third-party-provided information (such as value-added services or promotional
+                    links) and is not responsible for its accuracy. Users rely on such information at their own risk.
+                </li>
+                <li>TRSPL is a technology platform and does not verify the correctness of information provided by users
+                    or
+                    third parties. The publication of such information is at the user's sole risk.</li>
+                <li>Users shall not use the Service for prohibited purposes. They are responsible for all activities in
+                    connection with the Service and must comply with applicable laws, regulations, and industry
+                    standards.
+                </li>
+            </ul>
+
+
+
+            <h2>7. Subscription Plans</h2>
+            <ul>
+                <li>TRSPL offers a combination of Services which the User may subscribe to upon payment of applicable
+                    fees
+                    (“Subscription Fees/Fees”). Failure to subscribe may result in limited access to the Services.</li>
+                <li>The Subscription Fee paid by the User is non-refundable.</li>
+                <li>TRSPL reserves the right to revise the Subscription Fees and service charges without prior notice.
+                    Users
+                    must pay the revised amount upon notification.</li>
+            </ul>
+
+            <h2>8. Teamseafarer Rights and Platform Availability</h2>
+            <ul>
+                <li>TRSPL may suspend, terminate, or reject your registration to comply with legal requirements.</li>
+                <li>TRSPL reserves the right to remove users and User-generated Content if platform terms are violated.
+                </li>
+                <li>TRSPL may modify or terminate services at any time without notice.</li>
+                <li>TRSPL may access accounts for technical support, security, or legal reasons.</li>
+                <li>TRSPL has no obligation to monitor content but may act upon violations.</li>
+            </ul>
+
+            <h2>9. Code of Conduct</h2>
+            <h3>Usage of User Information</h3>
+            <ul>
+                <li>TRSPL may use User information for service provision, disclosures, and research.</li>
+                <li>TRSPL may engage third-party service providers for user services.</li>
+                <li>Data may be used for studies, research, reports, and marketing.</li>
+            </ul>
+
+
+            <h2>10. Trademark, Copyright, and Restrictions</h2>
+            <ul>
+                <li>All content, features, software, design, text, sound, and images on the Site belong to TRSPL or are
+                    licensed by TRSPL.</li>
+                <li>All icons and logos are proprietary trademarks of TRSPL unless stated otherwise.</li>
+                <li>Unauthorized copying, modification, or publication of TRSPL’s proprietary content is prohibited.
+                </li>
+                <li>Systematic retrieval of TRSPL content for compilation, database creation, or directory formation is
+                    strictly prohibited.</li>
+                <li>Users must take precautions to protect proprietary information and not disclose it to third parties.
+                </li>
+                <li>Users must comply with applicable laws regarding the usage or export of Site technology.</li>
+                <li>Users shall not copy, distribute, or modify the Site’s content without permission.</li>
+                <li>TRSPL may use the registered user's brand identity for promotional purposes.</li>
+            </ul>
+
+            <h2>11. Links to Other Websites</h2>
+            <ul>
+                <li>TRSPL is not responsible for third-party websites or their content.</li>
+                <li>Users should review the terms and privacy policies of third-party sites before use.</li>
+            </ul>
+
+            <h2>12. Suspension and Termination of the Account</h2>
+            <ul>
+                <li>The agreement starts when the user downloads or installs the application and continues until
+                    terminated.
+                </li>
+                <li>Users may terminate accounts, but fees paid are non-refundable.</li>
+                <li>TRSPL may terminate accounts at any time without notice.</li>
+                <li>Users must report unauthorized account access to TRSPL immediately.</li>
+                <li>TRSPL can disable accounts violating the terms or applicable laws.</li>
+                <li>TRSPL reserves the right to modify, suspend, or terminate services and user accounts without prior
+                    notice.</li>
+                <li>TRSPL may cancel accounts suspected of fraudulent activities.</li>
+                <li>Upon termination, all granted rights will cease, and users must delete the application.</li>
+                <li>Termination does not limit TRSPL’s legal rights and remedies.</li>
+            </ul>
+
+
+            <h2>13. Disclaimer</h2>
+            <ul>
+                <li>The platform and all materials are provided on an "as is" basis without warranties.</li>
+                <li>TRSPL disclaims liability for errors, security breaches, and interruptions.</li>
+                <li>Users are responsible for their own security and discretion while using the platform.</li>
+            </ul>
+
+            <h2>14. Limitation of Liability</h2>
+            <ul>
+                <li>TRSPL is not liable for direct, indirect, incidental, or consequential damages.</li>
+                <li>Users assume risks related to third-party content, errors, and unauthorized access.</li>
+                <li>Users accessing the platform from other jurisdictions must comply with local laws.</li>
+            </ul>
+
+            <h2>15. Indemnity and Release</h2>
+            <ul>
+                <li>Users agree to indemnify TRSPL from claims arising from their use of the platform.</li>
+                <li>TRSPL is not responsible for actions of third-party vendors or service providers.</li>
+            </ul>
+
+            <h2>16. Legal Actions and Notices</h2>
+            <ul>
+                <li>Legal actions must be initiated within one year of the cause of action.</li>
+                <li>Notices will be given in writing via mail or email.</li>
+            </ul>
+
+
+            <h2>17. Dispute Resolution</h2>
+            <p>In the event of any dispute between you and TRSPL, the same shall be amicably settled between the
+                Parties. If
+                any dispute is not settled amicably, the same shall be referred to the sole arbitrator to be appointed
+                by
+                both the Parties. The award given by the Arbitrator shall be final and binding on both the Parties. The
+                language of Arbitral Proceedings shall be English. This arbitration shall be governed by The Arbitration
+                &
+                Conciliation Act, 1996 and the place of arbitration shall be at Bangalore.</p>
+
+            <h2>18. Governing Law</h2>
+            <p>These Terms and conditions shall be governed and construed in accordance with Indian Laws and subject to
+                the
+                exclusive jurisdiction of competent courts at Bangalore.</p>
+
+            <h2>19. Fees and Costs</h2>
+            <p>You and TRSPL agree that each party will bear its own costs and attorneys’ fees in the event of a
+                dispute,
+                provided, however, that either party may recover fees and costs to the extent permitted by applicable
+                law.
+                If a court or an arbitrator determines that an arbitration has been brought or threatened in bad faith,
+                or
+                that the demand was frivolous or asserted for an improper purpose, the court or arbitrator may, to the
+                fullest extent permitted by law, award attorneys’ fees to the party defending against the claim just as
+                a
+                court could.</p>
+
+            <p>If either party believes that the other has initiated an arbitration in violation of this Dispute
+                Resolution
+                Agreement, if such an arbitration is threatened, or if either party has reason to believe an improperly
+                commenced arbitration is imminent, the party against whom the arbitration has been or will be initiated
+                may
+                seek an order from a court of competent jurisdiction enjoining the arbitration from being filed or
+                continued, and awarding its fees and costs, including reasonable attorneys’ fees, incurred in connection
+                with seeking the order.</p>
+
+            <h2>20. Contact</h2>
+            <p>In case of any grievance arising from the use of the Platforms, please contact:</p>
+            <p><strong>Contact person:</strong> Mr. Puneet Vajpayee<br>
+                <strong>Email:</strong> info@bytrs.com
+            </p>
+
+            <h2>21. Severability and Waiver</h2>
+            <h3>Severability</h3>
+            <p>If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed
+                and
+                interpreted to accomplish the objectives of such provision to the greatest extent possible under
+                applicable
+                law and the remaining provisions will continue in full force and effect.</p>
+
+            <h3>Waiver</h3>
+            <p>Except as provided herein, the failure to exercise a right or to require performance of an obligation
+                under
+                these Terms shall not affect a party's ability to exercise such right or require such performance at any
+                time thereafter nor shall be the waiver of a breach constitute a waiver of any subsequent breach.</p>
+
+            <h2>22. Updating These Terms</h2>
+            <p>From time to time, we may update these Terms to clarify our practices or to reflect new or different
+                practices (such as when we add new features), and TRSPL reserves the right in its sole discretion to
+                modify
+                and/or make changes to these Terms at any time with or without notice. If we make any material change,
+                we
+                will notify you using prominent means, such as by email notice sent to the email address specified in
+                your
+                account or by posting a notice through our Services. Modifications will become effective on the day they
+                are
+                posted unless stated otherwise.</p>
+
+            <p>Your continued use of our Services after changes become effective shall mean that you accept those
+                changes.
+                Any revised Terms shall supersede all previous Terms.</p>
+
+            <h2>23. Complete Understanding</h2>
+            <p>These Terms of Use contain the entire understanding of the Parties, and there are no other written or
+                oral
+                understandings or promises between the Parties with respect to the subject matter of these Terms of Use
+                other than those contained or referenced in these Terms of Use.</p>
+
+            <p>You have read these Terms of Use and agree to all the provisions contained above.</p>
+            <a href="#" class="back-to-top">↑ Back to Top</a>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white pt-10 pb-8 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+                <!-- Logo and Description -->
+                <div class="space-y-4">
+                    <img src="./images/logo.png" alt="TRS Logo" class="w-40 h-auto">
+                    <span class="text-xl font-bold text-white hidden md:block">Triumphant Robust Solutions</span>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Triumphant Robust Solutions bridges the gap between challenges and innovation through
+                        cutting-edge
+                        technology and strategic insights.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="p-2">
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li><a href="/products.html"
+                                class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="/contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="p-2">
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Email: <a href="mailto:info@bytrs.com" class="hover:text-white underline">info@bytrs.com</a>
+                        </li>
+                        <li>Phone: <a href="tel:+91-9606945073" class="hover:text-white underline">+91-9606945073</a>
+                        </li>
+                        <li>Address: [Your Office Address]</li>
+                    </ul>
+                </div>
+
+                <!-- Legal and Social -->
+                <div class="p-2">
+                    <h3 class="text-lg font-bold mb-4">Legal & Social</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/terms.html" class="text-gray-300 hover:text-white transition-colors">Terms &
+                                Conditions</a>
+                        </li>
+                        <li><a href="/policies.html" class="text-gray-300 hover:text-white transition-colors">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="flex items-center gap-4 mt-4">
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22.23 5.924c-.806.358-1.67.6-2.577.708a4.515 4.515 0 001.98-2.49 9.037 9.037 0 01-2.86 1.09 4.507 4.507 0 00-7.69 4.108 12.8 12.8 0 01-9.29-4.71 4.507 4.507 0 001.394 6.015 4.48 4.48 0 01-2.04-.563v.057a4.507 4.507 0 003.616 4.415 4.52 4.52 0 01-2.034.077 4.507 4.507 0 004.21 3.13 9.038 9.038 0 01-5.6 1.93c-.364 0-.724-.021-1.08-.063a12.78 12.78 0 006.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 002.26-2.34z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M8.29 20.25c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477 4.073 4.073 0 01-1.86-.513v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85 8.233 8.233 0 01-5.1 1.757c-.332 0-.66-.02-.98-.057a11.616 11.616 0 006.29 1.843" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright and Legal -->
+            <div class="border-t border-white/10 mt-8 pt-6 text-center">
+                <p class="text-gray-300 text-sm">
+                    &copy; 2025 Triumphant Robust Solutions. All rights reserved.
+                    <a href="terms.html" class="hover:text-white underline">Terms</a> |
+                    <a href="policies.html" class="hover:text-white underline">Privacy</a>
+                </p>
+            </div>
+        </footer>
+        <script>
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMenuButton = document.getElementById('close-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('hidden');
+            }
+
+            mobileMenuButton.addEventListener('click', toggleMenu);
+            closeMenuButton.addEventListener('click', toggleMenu);
+
+            // Close menu when clicking outside
+            mobileMenu.addEventListener('click', (e) => {
+                if (e.target === mobileMenu) {
+                    toggleMenu();
+                }
+            });
+        </script>
+</body>
+
+</html>

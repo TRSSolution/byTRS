@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Triumphant Robust Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', serif;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8fafc;
+            color: #214c79;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .wave-divider {
+            position: relative;
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .wave-divider::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100px;
+            background-size: 100px 35px;
+            background-image: radial-gradient(circle at 10px -5px, transparent 12px, #FFFFFF 13px);
+        }
+
+        .maritime-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 103, 102, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .maritime-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 103, 102, 0.2);
+        }
+
+        .feature-icon {
+            background: linear-gradient(135deg, #214c79 0%, #006766 100%);
+        }
+
+        .navy-gradient-text {
+            background: linear-gradient(135deg, #214c79 0%, #006766 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("nav a");
+            const currentPage = window.location.pathname.split("/").pop();
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("text-[#214c79]", "font-semibold", "relative");
+                    let span = document.createElement("span");
+                    span.classList.add("absolute", "left-0", "bottom-0", "w-full", "h-0.5", "bg-[#214c79]");
+                    link.appendChild(span);
+                }
+
+                else {
+                    link.classList.add("text-gray-700", "hover:text-[#214c79]");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <header class="w-full bg-white fixed top-0 left-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="images/logo.png" alt="Company Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold text-[#214c79] hidden md:block">Triumphant Robust
+                            Solutions</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Home
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="products.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Products
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        About Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Contact Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="contact.html"
+                        class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white px-6 py-2 rounded-lg font-medium hover:from-[#006766] hover:to-[#214c79] transition-all transform hover:scale-105 shadow-md">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                    class="md:hidden p-2 rounded-md text-[#214c79] hover:text-[#006766] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#214c79]">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50">
+            <!-- Overlay -->
+            <div class="fixed inset-0 bg-black/50" aria-hidden="true"></div>
+
+            <!-- Menu Content -->
+            <div class="relative bg-white max-w-xs w-full h-full shadow-xl">
+                <div class="p-5">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="images/logo.png" alt="Company Logo" class="h-10 w-auto">
+                        <button id="close-menu-button"
+                            class="p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#214c79]">
+                            <svg class="h-6 w-6 text-[#214c79]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <nav class="flex flex-col space-y-4">
+                        <a href="index.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Home</a>
+                        <a href="products.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Products</a>
+                        <a href="about.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">About Us</a>
+                        <a href="contact.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Contact Us</a>
+                        <a href="contact.html"
+                            class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white px-6 py-2 rounded-lg text-center font-medium hover:from-[#006766] hover:to-[#214c79] transition-all transform hover:scale-105 shadow-md mt-4">
+                            Get Started
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="relative bg-gradient-to-br from-[#214c79] to-[#006766] text-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div
+                class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==')]">
+            </div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 mt-[60px]">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Navigating the Future of <span
+                        class="border-b-4 border-yellow-400">Maritime Education</span></h1>
+                <p class="text-xl md:text-2xl opacity-90 mb-10">Bridging the gap between maritime institutes and
+                    seafarers with innovative digital solutions</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://calendly.com/awsthisatyam992/30min" target="_blank"
+                        class="bg-white text-[#214c79] font-semibold px-8 py-3 rounded-full hover:bg-opacity-90 transition duration-300 shadow-lg">
+                        Connect now</a>
+                    <a href="#download"
+                        class="bg-transparent border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-[#214c79] transition duration-300">Download
+                        App</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="wave-divider"></div> -->
+    </section>
+
+    <!-- Product Intro -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 navy-gradient-text">teamseafarers.in</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">A groundbreaking digital platform revolutionizing how
+                maritime institutes and seafarers connect, communicate, and coordinate training schedules in this
+                dynamic industry.</p>
+        </div>
+    </section>
+
+    <!-- Understanding the Need -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="maritime-card p-8">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="feature-icon w-14 h-14 rounded-full flex items-center justify-center text-white mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-bold text-[#214c79]">Understanding the Challenge</h2>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">The maritime industry operates on unpredictable
+                            schedules where seafarers' availability fluctuates constantly. This creates significant
+                            inefficiencies for both seafarers trying to plan their professional development and maritime
+                            institutes attempting to schedule courses effectively.</p>
+                        <div class="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-[#006766]">
+                            <p class="text-gray-700 italic">"Traditional scheduling methods simply can't keep up with
+                                the dynamic nature of seafaring careers, creating challenges for both professionals and
+                                educators."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="./images/shipAtSea.jpg" alt="Ship at sea" class="rounded-xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Solution -->
+    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold text-[#214c79] mb-4">Our <span
+                        class="border-b-4 border-yellow-400">Innovative Solution</span></h2>
+                <p class="text-xl text-gray-700">teamseafarers.in transforms maritime education coordination with
+                    cutting-edge digital tools</p>
+            </div>
+
+            <div class="maritime-card p-8 max-w-5xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/3 text-center">
+                        <div class="inline-block p-4 bg-[#214c79] rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79] mb-2">Smart Scheduling</h3>
+                        <p class="text-gray-700">Automated tools that align courses with seafarers' unpredictable
+                            availability</p>
+                    </div>
+
+                    <div class="md:w-1/3 text-center">
+                        <div class="inline-block p-4 bg-[#006766] rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79] mb-2">Instant Communication</h3>
+                        <p class="text-gray-700">Dedicated channels for seamless interaction between all parties</p>
+                    </div>
+
+                    <div class="md:w-1/3 text-center">
+                        <div class="inline-block p-4 bg-[#214c79] rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79] mb-2">Centralized Resources</h3>
+                        <p class="text-gray-700">Comprehensive course listings and maritime training resources in one
+                            place</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold text-[#214c79] mb-4">Revolutionary <span
+                        class="border-b-4 border-yellow-400">Features</span></h2>
+                <p class="text-xl text-gray-700">Designed specifically to address the unique challenges of maritime
+                    education</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#214c79] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Dynamic Scheduling</h3>
+                    </div>
+                    <p class="text-gray-700">Our intelligent algorithms automatically adjust course schedules based on
+                        real-time seafarer availability, minimizing conflicts and maximizing participation.</p>
+                </div>
+
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#006766] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Real-time Messaging</h3>
+                    </div>
+                    <p class="text-gray-700">Integrated communication platform allows instant updates between
+                        institutes, seafarers, and shipping companies, ensuring everyone stays informed.</p>
+                </div>
+
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#214c79] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Course Discovery</h3>
+                    </div>
+                    <p class="text-gray-700">Comprehensive search and filtering tools help seafarers find exactly the
+                        courses they need, when they need them, across all participating institutes.</p>
+                </div>
+
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#006766] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Certification Tracking</h3>
+                    </div>
+                    <p class="text-gray-700">Digital record-keeping of all certifications and training completed, with
+                        automatic renewal reminders to ensure compliance.</p>
+                </div>
+
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#214c79] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Performance Analytics</h3>
+                    </div>
+                    <p class="text-gray-700">Detailed reporting tools help institutes understand course demand patterns
+                        and optimize their offerings for maximum impact.</p>
+                </div>
+
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#006766] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Secure Platform</h3>
+                    </div>
+                    <p class="text-gray-700">Enterprise-grade security protects sensitive professional data while
+                        ensuring easy access for authorized users.</p>
+                </div>
+
+                <!-- New Features Added Below -->
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#214c79] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Single Click Profile Updates</h3>
+                    </div>
+                    <p class="text-gray-700">Update your professional profile with one click, ensuring your information
+                        is always current for training institutes and employers.</p>
+                </div>
+
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#006766] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">All Certificates in One Place</h3>
+                    </div>
+                    <p class="text-gray-700">Centralized digital repository for all your maritime certificates and
+                        documents, accessible anytime from any device.</p>
+                </div>
+
+                <div class="maritime-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#214c79] text-white p-2 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#214c79]">Track All Your Courses</h3>
+                    </div>
+                    <p class="text-gray-700">Comprehensive dashboard to monitor your course progress, completion status,
+                        and upcoming training requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="bg-gradient-to-br from-[#214c79] to-[#006766] text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Transforming the <span class="border-b-4 border-yellow-400">Maritime
+                        Industry</span></h2>
+                <p class="text-xl opacity-90">By resolving key industry challenges, teamseafarers.in enhances efficiency
+                    and coordination</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">75%</div>
+                    <h3 class="text-xl font-semibold mb-2">Reduction in Scheduling Conflicts</h3>
+                    <p class="opacity-90">Automated coordination minimizes double-booking and missed opportunities</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">90%</div>
+                    <h3 class="text-xl font-semibold mb-2">Faster Communication</h3>
+                    <p class="opacity-90">Real-time updates keep all parties informed instantly</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">60%</div>
+                    <h3 class="text-xl font-semibold mb-2">More Course Completions</h3>
+                    <p class="opacity-90">Better scheduling leads to higher participation rates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-20 bg-gradient-to-br from-[#214c79]/5 to-[#006766]/5 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#214c79]/10 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-48 -right-48 w-[800px] h-[800px] bg-[#006766]/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#214c79] mb-4">
+                    Our Strategic Mission
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Bridging maritime education gaps through innovative digital solutions
+                </p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Mission Card 1 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border border-[#214c79]/10 hover:border-[#006766]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#214c79]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-[#214c79]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#214c79] mb-2">Course Marketplace</h3>
+                            <p class="text-gray-600">
+                                Seamless discovery and booking of maritime courses from certified institutes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission Card 2 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border border-[#214c79]/10 hover:border-[#006766]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#006766]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-[#006766]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#214c79] mb-2">Institute Showcase</h3>
+                            <p class="text-gray-600">
+                                Comprehensive profiles highlighting courses, facilities, and achievements
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission Card 3 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border border-[#214c79]/10 hover:border-[#006766]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#214c79]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-[#214c79]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#214c79] mb-2">Quality Feedback Loop</h3>
+                            <p class="text-gray-600">
+                                Structured review system driving continuous improvement in maritime education
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission Card 4 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border border-[#214c79]/10 hover:border-[#006766]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-[#006766]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-[#006766]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#214c79] mb-2">Industry Intelligence</h3>
+                            <p class="text-gray-600">
+                                Real-time updates on maritime regulations, trends, and career opportunities
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unified Value Proposition -->
+            <div class="bg-gradient-to-r from-[#214c79] to-[#006766] rounded-xl shadow-2xl p-8 text-white">
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-3xl font-bold mb-6">Elevating Maritime Education</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-4 opacity-90">
+                                Our platform empowers institutes to effectively showcase their offerings while providing
+                                seafarers with:
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Course transparency & comparison
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Streamlined enrollment process
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Career-relevant updates
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="mb-4 opacity-90">
+                                Institutes benefit through:
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Enhanced visibility
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Actionable feedback
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Performance analytics
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <a href="/contact.html"
+                            class="inline-block bg-white text-[#006766] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all">
+                            Explore Partnership Opportunities
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="maritime-card p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-br from-[#214c79] to-[#006766] text-white">
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h2 class="text-3xl font-bold mb-4">Get the App Today</h2>
+                        <p class="mb-6 opacity-90">Join thousands of maritime professionals using our app on Android and
+                            iOS devices. Download now to access all features on the go.</p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <!-- Google Play Store Button -->
+                            <a href="#"
+                                class="flex items-center justify-center bg-[#1a1a1a] hover:bg-black text-white px-5 py-3 rounded-lg transition duration-300 group">
+                                <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M48 59.49v393a4.33 4.33 0 0 0 7.37 3.07L260 256L55.37 56.42A4.33 4.33 0 0 0 48 59.49M345.8 174L89.22 32.64l-.16-.09c-4.42-2.4-8.62 3.58-5 7.06l201.13 192.32ZM84.08 472.39c-3.64 3.48.56 9.46 5 7.06l.16-.09L345.8 338l-60.61-57.95ZM449.38 231l-71.65-39.46L310.36 256l67.37 64.43L449.38 281c19.49-10.77 19.49-39.23 0-50" />
+                                </svg>
+                                <div class="text-left">
+                                    <div class="text-xs text-gray-300">Get it on</div>
+                                    <div class="font-bold text-white group-hover:text-blue-200 transition">Google Play
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Apple App Store Button -->
+                            <a href="#"
+                                class="flex items-center justify-center bg-[#1a1a1a] hover:bg-black text-white px-5 py-3 rounded-lg transition duration-300 group">
+                                <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09999 22C7.78999 22.05 6.79999 20.68 5.95999 19.47C4.24999 16.91 2.93999 12.05 4.69999 8.94C5.56999 7.49 7.12999 6.59 8.81999 6.56C10.1 6.53 11.32 7.37 12.11 7.37C12.89 7.37 14.37 6.41 15.92 6.56C16.57 6.59 18.39 6.9 19.56 8.26C19.47 8.32 17.39 9.78 17.41 12.29C17.44 15.27 20.06 16.31 20.09 16.32C20.06 16.4 19.67 17.93 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.1C14.21 5.85 13.07 6.5 12 6.39C11.88 5.22 12.4 4.08 13 3.5Z"
+                                        fill="white" />
+                                </svg>
+                                <div class="text-left">
+                                    <div class="text-xs text-gray-300">Download on the</div>
+                                    <div class="font-bold text-white group-hover:text-blue-200 transition">App Store
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center relative">
+                        <div class="relative">
+                            <!-- Phone mockup -->
+                            <div class="w-56 h-auto relative">
+                                <div
+                                    class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-[#00D8FF] to-[#00A3FF] opacity-75 blur">
+                                </div>
+                                <div class="relative bg-gray-900 rounded-3xl p-2 overflow-hidden">
+                                    <div class="h-10 flex items-center justify-center">
+                                        <div class="w-16 h-1 bg-gray-700 rounded-full"></div>
+                                    </div>
+                                    <div
+                                        class="bg-gray-800 rounded-2xl overflow-hidden h-96 flex items-center justify-center">
+                                        <div class="p-4 text-center">
+                                            <div
+                                                class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#00D8FF] to-[#00A3FF] flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                                </svg>
+                                            </div>
+                                            <h3 class="text-white font-bold mb-2">Team Seafarers.In</h3>
+                                            <p class="text-gray-400 text-sm">Scan QR to download</p>
+                                            <div class="mt-4 p-2 bg-white rounded-lg inline-block">
+                                                <img src="images/qrcode.png" alt="QR Code" class="h-24 w-24 mx-auto">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Make in India Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#214c79] mb-12 text-center">Proudly Supporting India's Growth
+                    Initiatives</h2>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Startup India Card -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col md:flex-row items-center gap-6 h-full">
+                        <div class="flex-shrink-0">
+                            <img src="./images/MII.webp" alt="Startup India Logo" class="h-40 w-40 object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#214c79] mb-3 flex items-center gap-2">
+                                <span class="border-b-4 border-[#FF9933]">Make in India</span>
+                            </h3>
+                            <p class="text-gray-700 mb-3">At Triumphant Robust Solutions, we champion the Make in India
+                                initiative by developing homegrown, technology-driven solutions.</p>
+                            <p class="text-gray-700">We are committed to making India a hub for innovation,
+                                sustainability, and economic growth.</p>
+                        </div>
+                    </div>
+
+                    <!-- Digital India Card -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col md:flex-row items-center gap-6 h-full">
+                        <div class="flex-shrink-0">
+                            <img src="./images/di.png" alt="Digital India Logo" class="h-40 w-40 object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#214c79] mb-3 flex items-center gap-2">
+                                <span class="border-b-4 border-[#138808]">Digital India</span>
+                            </h3>
+                            <p class="text-gray-700 mb-3">We are committed to the Digital India mission, developing
+                                technology solutions that contribute to India's digital transformation and empowerment.
+                            </p>
+                            <p class="text-gray-700">teamseafarers.in is developed entirely in India by Indian
+                                engineers, supporting the vision of a digitally empowered society.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-[#214c79] text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Charting the Future <span
+                        class="border-b-4 border-yellow-400">Together</span></h2>
+                <p class="text-xl mb-8">Triumphant Robust Solutions Private Limited is your trusted partner for
+                    cutting-edge industry solutions. From mechanical and electrical supplies to innovative software
+                    platforms, we deliver excellence.</p>
+                <a href="https://calendly.com/awsthisatyam992/30min" target="_blank">
+                    <div class="bg-white text-[#214c79] inline-block px-6 py-3 rounded-full font-semibold">Let's build
+                        the
+                        future together</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white pt-10 pb-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+            <!-- Logo and Description -->
+            <div class="space-y-4">
+                <img src="./images/logo.png" alt="TRS Logo" class="w-40 h-auto">
+                <span class="text-xl font-bold text-white hidden md:block">Triumphant Robust Solutions</span>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Triumphant Robust Solutions bridges the gap between challenges and innovation through cutting-edge
+                    technology and strategic insights.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="p-2">
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="/products.html" class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                    <li><a href="/contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="p-2">
+                <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>Email: <a href="mailto:info@bytrs.com" class="hover:text-white underline">info@bytrs.com</a>
+                    </li>
+                    <li>Phone: <a href="tel:+91-9606945073" class="hover:text-white underline">+91-9606945073</a></li>
+                    <li>Address: [Your Office Address]</li>
+                </ul>
+            </div>
+
+            <!-- Legal and Social -->
+            <div class="p-2">
+                <h3 class="text-lg font-bold mb-4">Legal & Social</h3>
+                <ul class="space-y-2">
+                    <li><a href="/terms.html" class="text-gray-300 hover:text-white transition-colors">Terms &
+                            Conditions</a>
+                    </li>
+                    <li><a href="/policies.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                    </li>
+                    <li class="flex items-center gap-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.23 5.924c-.806.358-1.67.6-2.577.708a4.515 4.515 0 001.98-2.49 9.037 9.037 0 01-2.86 1.09 4.507 4.507 0 00-7.69 4.108 12.8 12.8 0 01-9.29-4.71 4.507 4.507 0 001.394 6.015 4.48 4.48 0 01-2.04-.563v.057a4.507 4.507 0 003.616 4.415 4.52 4.52 0 01-2.034.077 4.507 4.507 0 004.21 3.13 9.038 9.038 0 01-5.6 1.93c-.364 0-.724-.021-1.08-.063a12.78 12.78 0 006.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 002.26-2.34z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.25c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477 4.073 4.073 0 01-1.86-.513v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85 8.233 8.233 0 01-5.1 1.757c-.332 0-.66-.02-.98-.057a11.616 11.616 0 006.29 1.843" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright and Legal -->
+        <div class="border-t border-white/10 mt-8 pt-6 text-center">
+            <p class="text-gray-300 text-sm">
+                &copy; 2025 Triumphant Robust Solutions. All rights reserved.
+                <a href="terms.html" class="hover:text-white underline">Terms</a> |
+                <a href="policies.html" class="hover:text-white underline">Privacy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMenu);
+        closeMenuButton.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                toggleMenu();
+            }
+        });
+    </script>
+</body>
+
+</html>

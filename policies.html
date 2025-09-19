@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Terms and Conditions - Triumphant Robust Solutions</title>
+    <style>
+        /* Custom styles for better readability */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .terms-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .terms-container h1 {
+            font-size: 2.5rem;
+            color: #214c79;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .terms-container h2 {
+            font-size: 1.75rem;
+            color: #006766;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .terms-container p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .terms-container ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .terms-container ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .terms-container a {
+            color: #006766;
+            text-decoration: underline;
+        }
+
+        .terms-container a:hover {
+            color: #214c79;
+        }
+
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-left: 4px solid #006766;
+            margin: 20px 0;
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #006766;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-top:hover {
+            color: #214c79;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w-full bg-white fixed top-0 left-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="images/logo.png" alt="Company Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold text-[#214c79] hidden md:block">Triumphant Robust
+                            Solutions</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Home
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="products.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Products
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        About Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html"
+                        class="text-[#214c79] font-medium hover:text-[#006766] transition-colors relative group">
+                        Contact Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#006766] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="contact.html"
+                        class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white px-6 py-2 rounded-lg font-medium hover:from-[#006766] hover:to-[#214c79] transition-all transform hover:scale-105 shadow-md">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                    class="md:hidden p-2 rounded-md text-[#214c79] hover:text-[#006766] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#214c79]">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50">
+            <!-- Overlay -->
+            <div class="fixed inset-0 bg-black/50" aria-hidden="true"></div>
+
+            <!-- Menu Content -->
+            <div class="relative bg-white max-w-xs w-full h-full shadow-xl">
+                <div class="p-5">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="images/logo.png" alt="Company Logo" class="h-10 w-auto">
+                        <button id="close-menu-button"
+                            class="p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#214c79]">
+                            <svg class="h-6 w-6 text-[#214c79]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <nav class="flex flex-col space-y-4">
+                        <a href="index.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Home</a>
+                        <a href="products.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Products</a>
+                        <a href="about.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">About Us</a>
+                        <a href="contact.html"
+                            class="text-[#214c79] font-medium hover:text-[#006766] px-3 py-2 rounded-md">Contact Us</a>
+                        <a href="contact.html"
+                            class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white px-6 py-2 rounded-lg text-center font-medium hover:from-[#006766] hover:to-[#214c79] transition-all transform hover:scale-105 shadow-md mt-4">
+                            Get Started
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Terms and Conditions Content -->
+    <main class="terms-container pt-32">
+        <h1>Privacy Policies</h1>
+        <p>Triumphant Robust Solutions Private Limited ("teamseafarers.in," "we," or "us") bridges challenges with
+            innovative solutions. This policy explains how we collect, use, store, and protect your personal data when
+            you access our website, mobile app, or services. We process necessary data to provide you with services,
+            including those from professionals on our platform. Your privacy is our priority, and we ensure responsible
+            data handling. By using our platform, you consent to our data practices.</p>
+
+        <div class="highlight">
+            <p><strong>Key Points:</strong> By using the Services, you confirm that you have read and agree to be bound
+                by this Policy and consent to the processing activities described under this Policy. </p>
+        </div>
+
+        <h2>1. How this policy applies</h2>
+        <p>This Policy applies to individuals who access or use the Service(s) or otherwise avail the Professional
+            Service(s). By using the Platform, you consent to the collection, storage, usage, and disclosure of your
+            personal data, as described in and collected by us in accordance with this Policy.</p>
+
+        <h2>2. Data We Collect</h2>
+        <p>We collect various types of personal data, including::</p>
+        <ul>
+            <li><strong>Contact Data:</strong> Address, location, email, and phone number.</li>
+            <li><strong>Identity & Profile Data:</strong> Name, username, photos, and gender.</li>
+            <li><strong>Marketing & Communication Data:</strong> Preferences, feedback, chats, call records, and survey
+                responses.</li>
+            <li><strong>Technical Data:</strong> IP address, device details, browser type, and usage analytics.</li>
+            <li><strong>Transaction Data:</strong> Service history, payment details (limited to tracking transactions).
+            </li>
+            <li><strong>Usage Data:</strong> Activity on the platform, interactions, and session duration.</li>
+        </ul>
+
+        <h2>3. Collection of Personal Data</h2>
+        <p>We collect personal data through the following methods:</p>
+        <ul>
+            <li><strong>Direct Interactions:</strong> You provide data when you: <ul>
+                    <li>Create an account or profile.</li>
+                    <li>Use our Services.</li>
+                    <li>Participate in promotions, polls, or surveys.</li>
+                    <li>Request marketing communications.</li>
+                    <li>Report issues, provide feedback, or contact us.</li>
+                </ul>
+            </li>
+            <li><strong>Automated Technologies:</strong> We collect Technical Data using: <ul>
+                    <li>Cookies, web beacons, pixel tags, and server logs.</li>
+                    <li>Analytics providers like Facebook and advertising networks.</li>
+                </ul>
+            </li>
+            <li><strong>Third-Party Sources:</strong> We receive data from: <ul>
+                    <li>Service professionals and publicly available sources.</li>
+                    <li>Our affiliate entities.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>4. Use of Personal Data</h2>
+        <p>We use your personal data in compliance with the law and to provide, improve, and secure our Services.</p>
+        <ul>
+            <li><strong>Primary Uses:</strong>
+                <ul>
+                    <li>Verify your identity and register your account.</li>
+                    <li>Provide the Services and enable Professional Services.</li>
+                    <li>Personalize your experience and monitor trends.</li>
+                    <li>Enhance functionality and improve customer service.</li>
+                    <li>Track transactions and process payments.</li>
+                </ul>
+            </li>
+            <li><strong>Communication & Notifications:</strong>
+                <ul>
+                    <li>Send updates, notifications, and company news.</li>
+                    <li>Facilitate Professional Services by sharing relevant information.</li>
+                    <li>Market and advertise Services.</li>
+                </ul>
+            </li>
+            <li><strong>Security & Compliance:</strong>
+                <ul>
+                    <li>Comply with legal obligations and enforce our Terms.</li>
+                    <li>Protect our business through troubleshooting, data analysis, and internal operations.</li>
+                    <li>Respond to court orders and legal claims.</li>
+                </ul>
+            </li>
+            <li><strong>Data Sharing & Consent:</strong>
+                <ul>
+                    <li>By using our Services, you authorize us, service professionals, and affiliates to contact you
+                        via email or phone.</li>
+                    <li>Your data may be shared with vendors, social media companies, storage providers, analytics
+                        providers, consultants, legal advisors, and auditors.</li>
+                    <li>We may disclose data when required by law, court orders, or government authorities in good
+                        faith.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>5. Cookies</h2>
+        <ul>
+            <li><strong>What Are Cookies?</strong>
+                <ul>
+                    <li>Cookies are small files stored on your device that help recognize your browser and remember
+                        certain information.</li>
+                </ul>
+            </li>
+            <li><strong>How We Use Cookies:</strong>
+                <ul>
+                    <li>Distinguish you from other users for a personalized experience.</li>
+                    <li>Save preferences for future visits.</li>
+                    <li>Track advertisements and analyze site traffic.</li>
+                    <li>Work with third-party service providers to improve our website and services.</li>
+                </ul>
+            </li>
+            <li><strong>Third-Party Cookies:</strong>
+                <ul>
+                    <li>Some cookies may be placed by third parties on certain pages of the Platform.</li>
+                    <li>We do not control how third parties use cookies.</li>
+                </ul>
+            </li>
+            <li><strong>Additional Data Collection:</strong>
+                <ul>
+                    <li>We may collect personal correspondence (e.g., emails) related to your activities on the
+                        Platform.</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h2>6. Disclosures and Sharing of Personal Data</h2>
+        <ul>
+            <li><strong>Third-Party Transfers:</strong>
+                <ul>
+                    <li>We may disclose personal data to third parties with whom we have agreements.</li>
+                    <li>Personal data may be shared with our affiliates, subsidiaries, or related entities.</li>
+                </ul>
+            </li>
+            <li><strong>Service Providers:</strong>
+                <ul>
+                    <li>We use third-party service providers for communications (SMS, emails, IVR, WhatsApp, etc.),
+                        banking, payment gateways, analytics, cloud services, and hardware integrations.</li>
+                    <li>These service providers are contractually bound to keep your data confidential and use it only
+                        for designated purposes.</li>
+                </ul>
+            </li>
+            <li><strong>Customer Support:</strong>
+                <ul>
+                    <li>Our customer care team may access your information to resolve queries or issues.</li>
+                </ul>
+            </li>
+            <li><strong>Partner Services:</strong>
+                <ul>
+                    <li>If you sign up for partner services, we may share necessary personal data with third parties to
+                        facilitate these services.</li>
+                    <li>Third parties are restricted from using this information for any other purpose.</li>
+                </ul>
+            </li>
+            <li><strong>Emailing Services to Friends:</strong>
+                <ul>
+                    <li>If you use the platform to email a service to a friend, we may collect both your and your
+                        friend’s name, phone number, and email address.</li>
+                    <li>These details are used solely for sharing the service unless otherwise permitted.</li>
+                </ul>
+            </li>
+            <li><strong>Third-Party Links:</strong>
+                <ul>
+                    <li>Our website may contain links to third-party websites. Accessing them is at your own risk.</li>
+                    <li>We are not responsible for changes or policies on external websites, and users should review
+                        their privacy policies.</li>
+                </ul>
+            </li>
+            <li><strong>Legal and Compliance Disclosures:</strong>
+                <ul>
+                    <li>We may access, store, transfer, and disclose personal data to: <ul>
+                            <li>Comply with legal requests, laws, and regulations.</li>
+                            <li>Enforce our Terms of Service and investigate potential fraud or security issues.</li>
+                            <li>Protect users, our company, and the public from harm or illegal activities.</li>
+                            <li>Prevent or stop activities we consider illegal, unethical, or legally actionable.</li>
+                        </ul>
+                    </li>
+                    <li>Such disclosures may occur without prior notice to you.</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h2>7. Data Security</h2>
+        <ul>
+            <li><strong>Security Measures:</strong>
+                <ul>
+                    <li>We implement encryption, password protection, call masking, and physical security measures to
+                        protect personal data from unauthorized access.</li>
+                    <li>We follow security standards prescribed by applicable laws.</li>
+                </ul>
+            </li>
+            <li><strong>Built-in Security Features:</strong>
+                <ul>
+                    <li>Our platform has strong security features that continuously protect your data.</li>
+                    <li>Real-time security checks and tests help detect and block threats before they reach you.</li>
+                    <li>If a security threat is detected, we will notify you and provide guidance to protect your
+                        privacy.</li>
+                </ul>
+            </li>
+            <li><strong>Data Processing & Safeguards:</strong>
+                <ul>
+                    <li>We process personal information only for its intended purpose.</li>
+                    <li>Users can access, correct, amend, or delete their personal information.</li>
+                    <li>We take reasonable steps to ensure personal data is treated securely and in accordance with this
+                        Privacy Policy.</li>
+                </ul>
+            </li>
+            <li><strong>Risk & Liability:</strong>
+                <ul>
+                    <li>Using the platform is at your own risk.</li>
+                    <li>We are not liable for data disclosures caused by transmission errors, unauthorized third-party
+                        access, or other uncontrollable factors.</li>
+                    <li>If a security breach occurs, we will promptly notify affected users and take corrective actions.
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Spam Protection:</strong>
+                <ul>
+                    <li>We use spam detection measures to filter out suspicious emails.</li>
+                    <li>Emails identified as spam may be rejected or reported to authorities.</li>
+                </ul>
+            </li>
+            <li><strong>Password Security:</strong>
+                <ul>
+                    <li>Users are responsible for keeping their passwords confidential.</li>
+                    <li>We are not responsible for unauthorized access due to lost, stolen, or compromised passwords.
+                    </li>
+                    <li>If your password is compromised, notify us immediately to reset it.</li>
+                </ul>
+            </li>
+            <li><strong>Internet Security Disclaimer:</strong>
+                <ul>
+                    <li>No method of online transmission or electronic storage is 100% secure.</li>
+                    <li>We take commercially reasonable steps to protect your data but cannot guarantee absolute
+                        security.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>8. Exclusion</h2>
+        <ul>
+            <li><strong>Scope of Privacy Policy:</strong>
+                <ul>
+                    <li>This Privacy Policy applies only to information collected by the Company through the Website.
+                    </li>
+                    <li>It does not cover unsolicited information provided by you through the Website or other means.
+                    </li>
+                    <li>Information posted on public areas of the Website is considered non-confidential.</li>
+                    <li>The Company may use or disclose unsolicited information without limitation.</li>
+                </ul>
+            </li>
+            <li><strong>Protection of Personal Information:</strong>
+                <ul>
+                    <li>The Company takes measures to protect Personal Information offline.</li>
+                    <li>Access to Personal Information is restricted to employees, agents, partners, and third parties
+                        who require it to provide services.</li>
+                    <li>The Company is not responsible for how partners or third parties handle, secure, or distribute
+                        your Personal Information outside of their agreements with us.</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h2>9. Your Rights in Relation to Your Personal Data</h2>
+        <ul>
+            <li><strong>Access and Correction:</strong>
+                <ul>
+                    <li>You have the right to access your personal information and review what data we maintain about
+                        you.</li>
+                    <li>If your personal information is incorrect or incomplete, you can request an update.</li>
+                </ul>
+            </li>
+            <li><strong>Copy of Personal Information:</strong>
+                <ul>
+                    <li>You may request a copy of your personal information.</li>
+                </ul>
+            </li>
+            <li><strong>Right to Object:</strong>
+                <ul>
+                    <li>You have the right to object to how we process your personal information.</li>
+                </ul>
+            </li>
+            <li><strong>Right to Deletion or Restriction:</strong>
+                <ul>
+                    <li>You may request that we delete or restrict the use of your personal data.</li>
+                    <li>This right is subject to applicable law and may affect your access to certain services.</li>
+                </ul>
+            </li>
+            <li><strong>Objection to Automated Processing:</strong>
+                <ul>
+                    <li>You have the right to object to personal data processing conducted by automated means,
+                        especially if it involves decision-making.</li>
+                </ul>
+            </li>
+            <li><strong>Filing a Complaint:</strong>
+                <ul>
+                    <li>You may file a complaint with the relevant supervisory authority if you suspect a violation of
+                        your data protection rights.</li>
+                </ul>
+            </li>
+            <li><strong>Consent Withdrawal:</strong>
+                <ul>
+                    <li>Your consent for data collection, use, and disclosure remains valid until withdrawn in writing.
+                    </li>
+                    <li>Once withdrawn, we will stop processing your personal data, except where permitted by law.</li>
+                    <li>We will respond to withdrawal requests within a reasonable timeframe.</li>
+                    <li>You may withdraw consent by contacting us or using the Website’s functionalities.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>10. Deletion of Account and Personal Data</h2>
+        <ul>
+            <li>You have the right to delete or request assistance in deleting your personal data.</li>
+            <li>Our service may allow you to delete certain information directly within the platform.</li>
+            <li>You can update, amend, or delete your information at any time by: <ul>
+                    <li>Signing into your account and accessing the settings section.</li>
+                    <li>Contacting us to request access, correction, or deletion of your data.</li>
+                </ul>
+            </li>
+            <li>However, we may need to retain certain information when legally required.</li>
+        </ul>
+
+
+        <h2>11. Right to Opt-Out</h2>
+        <ul>
+            <li>Upon registration, you may receive communications from us.</li>
+            <li>We provide all users with the option to opt-out of receiving notifications.</li>
+            <li>You can unsubscribe from marketing communications by clicking the "unsubscribe" link in emails (if
+                available).</li>
+        </ul>
+
+
+        <h2>12. Data Retention</h2>
+        <ul>
+            <li>Your personal data will be stored as long as necessary for our stated purposes.</li>
+            <li>We may retain data for a reasonable period even after account termination to comply with legal
+                obligations.</li>
+            <li>In some cases, we may aggregate personal data for research or statistical purposes, allowing us to use
+                it indefinitely.</li>
+            <li>When you delete or request deletion of data, we ensure: <ul>
+                    <li>All data is safely removed from our servers.</li>
+                    <li>Information is not accidentally or maliciously deleted.</li>
+                    <li>There may be a delay in deletion due to verification processes.</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h2>13. Business Transitions</h2>
+        <ul>
+            <li>If we undergo a business transition (merger, acquisition, or asset sale), your personal data may be
+                transferred as part of the assets.</li>
+        </ul>
+
+        <h2>14. User-Generated Content</h2>
+        <ul>
+            <li>You can post content on our platform, such as comments, feedback, and images.</li>
+            <li>This content will be publicly available to all visitors.</li>
+            <li>We cannot prevent misuse of publicly shared content, and we disclaim any liability for such use.</li>
+            <li>You must comply with all applicable laws when posting content.</li>
+            <li>You are solely responsible for any content that violates applicable laws.</li>
+        </ul>
+
+        <h2>15. Updates to This Policy</h2>
+        <ul>
+            <li>We may occasionally update this Privacy Policy.</li>
+            <li>Changes will be posted on the platform or shared via email.</li>
+            <li>By continuing to use our platform after such updates, you consent to the changes.</li>
+            <li>We encourage you to review this policy periodically.</li>
+        </ul>
+
+
+        <h2>16. Grievance Officer</h2>
+        <ul>
+            <li>Contact Person: Mr. Puneet Vajpayee</li>
+            <li>Email: info@bytrs.com</li>
+        </ul>
+        <a href="#" class="back-to-top">↑ Back to Top</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-[#214c79] to-[#006766] text-white pt-10 pb-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+            <!-- Logo and Description -->
+            <div class="space-y-4">
+                <img src="./images/logo.png" alt="TRS Logo" class="w-40 h-auto">
+                <span class="text-xl font-bold text-white hidden md:block">Triumphant Robust Solutions</span>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Triumphant Robust Solutions bridges the gap between challenges and innovation through cutting-edge
+                    technology and strategic insights.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="p-2">
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="/products.html" class="text-gray-300 hover:text-white transition-colors">Products</a>
+                    </li>
+                    <li><a href="/contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="p-2">
+                <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>Email: <a href="mailto:info@bytrs.com" class="hover:text-white underline">info@bytrs.com</a>
+                    </li>
+                    <li>Phone: <a href="tel:+91-9606945073" class="hover:text-white underline">+91-9606945073</a></li>
+                    <li>Address: [Your Office Address]</li>
+                </ul>
+            </div>
+
+            <!-- Legal and Social -->
+            <div class="p-2">
+                <h3 class="text-lg font-bold mb-4">Legal & Social</h3>
+                <ul class="space-y-2">
+                    <li><a href="/terms.html" class="text-gray-300 hover:text-white transition-colors">Terms &
+                            Conditions</a>
+                    </li>
+                    <li><a href="/policies.html" class="text-gray-300 hover:text-white transition-colors">Privacy
+                            Policy</a>
+                    </li>
+                    <li class="flex items-center gap-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.23 5.924c-.806.358-1.67.6-2.577.708a4.515 4.515 0 001.98-2.49 9.037 9.037 0 01-2.86 1.09 4.507 4.507 0 00-7.69 4.108 12.8 12.8 0 01-9.29-4.71 4.507 4.507 0 001.394 6.015 4.48 4.48 0 01-2.04-.563v.057a4.507 4.507 0 003.616 4.415 4.52 4.52 0 01-2.034.077 4.507 4.507 0 004.21 3.13 9.038 9.038 0 01-5.6 1.93c-.364 0-.724-.021-1.08-.063a12.78 12.78 0 006.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 002.26-2.34z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.25c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477 4.073 4.073 0 01-1.86-.513v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85 8.233 8.233 0 01-5.1 1.757c-.332 0-.66-.02-.98-.057a11.616 11.616 0 006.29 1.843" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright and Legal -->
+        <div class="border-t border-white/10 mt-8 pt-6 text-center">
+            <p class="text-gray-300 text-sm">
+                &copy; 2025 Triumphant Robust Solutions. All rights reserved.
+                <a href="terms.html" class="hover:text-white underline">Terms</a> |
+                <a href="policies.html" class="hover:text-white underline">Privacy</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMenu);
+        closeMenuButton.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                toggleMenu();
+            }
+        });
+    </script>
+</body>
+
+</html>
